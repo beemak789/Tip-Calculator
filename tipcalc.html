@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator</title>
+    <link rel="stylesheet" href="tipcalc.css">
+</head>
+<body>
+    <div id ="container">
+        <h2 id ="header1">How much was your bill?</h2>
+
+        <div id= "display-container">
+            <input id= "bill-amount" type="text" placeholder="Enter Bill Amount">
+            <p id= "value"></p>
+        </div>
+
+        <div id= "percentage-container">
+            <h3>How was your service?</h2>
+        </div>
+
+        <div id = "tip-percentage">
+            <label for="tip-amount">The service was...</label>
+                <select name="tip-amount" id="tip-amountid">
+                    <option value="blank"></option>
+                    <option value="fair">10% - Nothing Special</option>
+                    <option value="good">15% - Not Bad</option>
+                    <option value="pretty-awesome">20% - Pretty Awesome</option>
+                    <option value="stellar"> 25% - Stellar</option>
+                </select>
+        </div>
+
+        <div id="numberofpeople-container">
+            <label for="party-size">Party Size</label>
+            <select name="party-size" id="party-sizeid">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
+        </div>
+
+        <div id="calculate-tip">
+            <button>CALCULATE TIP!</button>
+        </div>
+
+        <h1>TIP AMOUNT PER PERSON(S)</h1>
+
+        <div id="display-tip">
+            <h1></h1>
+            <!-- to be entered here -->
+        </div>
+
+    </div>
+
+
+    <script src= "tipcalc.js"></script>
+</body>
+</html>
